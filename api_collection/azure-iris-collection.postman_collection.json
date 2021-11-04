@@ -1,0 +1,40 @@
+{
+	"info": {
+		"_postman_id": "1606b5bb-fb9a-4b2a-9c09-6478054aabbc",
+		"name": "azure-iris-collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "azure-iris-real-time",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"data\": [\r\n        [\r\n            6.5,\r\n            3.2,\r\n            5.1,\r\n            2.0\r\n        ]\r\n    ]\r\n}"
+				},
+				"url": {
+					"raw": "http://e5f3e3ee-e4f5-476e-b9b8-47825f82e99a.eastus2.azurecontainer.io/score",
+					"protocol": "http",
+					"host": [
+						"e5f3e3ee-e4f5-476e-b9b8-47825f82e99a",
+						"eastus2",
+						"azurecontainer",
+						"io"
+					],
+					"path": [
+						"score"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
